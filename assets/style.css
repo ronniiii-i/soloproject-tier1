@@ -9,6 +9,7 @@
 }
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 body {
     padding-top: 6rem;
@@ -26,7 +27,7 @@ h3{
 h4{
     font-size: 2rem;
 }
-h5,p,a{
+h5,p,a,textarea,input{
     font-size: 1.6rem;
 }
 h6,small{
@@ -37,9 +38,40 @@ img{
 }
 a{
     text-decoration: none;
+    transition: all .3s;
 }
 a,span{
     display: inline-block;
+}
+input,
+textarea{
+    border: none;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #000000;
+  background-color: transparent !important;
+  /* -webkit-box-shadow: 0 0 0px 1000px #00000000 inset; */
+  /* transition: background-color 5000s ease-in-out 0s; */
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: box-shadow ease-in-out .15s;
+}
+input:focus, input:active, input:visited, textarea:focus, textarea:active, textarea:visited{
+    border: none;
+    outline: none;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
 }
 .flex{
     display: flex;
@@ -102,6 +134,9 @@ section{
     padding: 5rem 7rem;
     width: 100%;
 }
+main a:hover{
+    opacity: .9;
+}
 #home{
     background: url(img/07.png) fixed center no-repeat;
     text-align: center;
@@ -121,49 +156,153 @@ section{
 #about .more{
     padding-block: 4rem;
 }
-#about .card{
+.card{
     background-color: #ececec;
 }
-#about .card .image {
+.image {
     text-align: center;
     overflow: hidden;
 }
-#about .desc .card .image {
+.desc .card .image {
     height: 200px;
 }
-#about .card .image img{
+.card .image img{
+    width: 110%;
     transition: all .3s; 
 }
-#about .card .image:hover img{
-    width: 110%;
+.card .image:hover img{
+    width: 120%;
 }
-#about .card .text{
+.card .text{
     padding: 1rem;
     text-align: center;
 }
-#about .card .text h4,
-#about .card .text p{
+.card .text h4,
+.card .text p{
     padding: .5rem 1rem;
 }
-#about .desc .card .text h4,
-#about .desc .card .text p{
+.card .text h4{
+    color: #666666;
+}
+.card .text p{
+    color: #333333;
+}
+.desc .card .text h4,
+.desc .card .text p{
     text-align: left;
 }
-#about .desc .card .text a{
+.card .text a{
     margin: 1rem;
     padding: 1rem 2rem;
-    background-color: #824332;
+}
+#about .card .text a{
     color: #ececec;
 }
-#about .more .card .image {
+#about .desc .card .text a{
+    background-color: #824332;
+}
+.desc .card{
+    min-height: 44rem;
+}
+.more .card{
+    min-height: 56rem;
+}
+.more .card .image {
     height: 320px;
+}
+#about .more .card .text a{
+    background-color: white;
+    color: #666666;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
 }
 #services{
     padding: 2rem 0;
 }
-#services .flex{
+#services .header{
     background: url(img/03.png) fixed center no-repeat;
     text-align: center;
     color: white;
     min-height: 60vh;
+}
+#services .desc,
+#services .col{
+    padding: 2rem 7rem;
+}
+#services .desc h4{
+    text-align: center;
+}
+#services .desc a,
+.col a{
+    color: #666666;
+    background-color: white;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+}
+#about .more .card .text a:hover,
+#services .desc a:hover,
+.col a:hover{
+    background-color: #ececec;
+}
+.col .image{
+    overflow: hidden;
+    height: 45rem;
+}
+.col .text{
+    text-align: left;
+}
+#contact{
+    background: url(img/08.png) fixed center no-repeat;
+    text-align: center;
+    color: white;
+    padding: 5rem 7rem;
+}
+#contact h2{
+    text-shadow: 2px 2px #333333;
+}
+#contact p,
+#contact input,
+#contact textarea{
+    background-color: #f2f2f266;
+    border-radius: 5px;
+    width: 100%;
+}
+#contact h2,
+#contact p{
+    padding: 2rem;
+}
+#contact h2,
+#contact p,
+#contact form{
+    max-width: 60%;
+    margin: 2rem auto;
+}
+.details input{
+    height: 34px;
+}
+#contact input,
+#contact textarea{
+    margin-block: 1rem;
+    padding: .5rem 1rem;
+    color: #000;
+}
+#contact textarea{
+    height: 140px;
+}
+#contact input[type="submit"]{
+    align-self: flex-start;
+    width: fit-content;
+    padding: 1rem 3rem;
+    color: white;
+    border: 1px solid #adadad;
+    background: #262628 none repeat scroll 0 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+#contact input[type="submit"]:hover{
+    background-color: #adadad;
+    color: #262628;
+}
+*::placeholder{
+    color: #333333;
 }
