@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Advice Generator App](https://conquer-tier-1-soloproject.vercel.app/)
+- Live Site URL: [Solo Project Tier 1](https://conquer-tier-1-soloproject.vercel.app/)
 
 ## My process
 
