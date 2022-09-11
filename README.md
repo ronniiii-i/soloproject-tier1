@@ -1,101 +1,51 @@
 # Chingu Solo Project - Tier 1 - Website Template
 
-![Tier1 Website Template](./assets/Tier1_Website_Template.gif)
+This is my clone of the [Tier1 Website Template](https://www.free-css.com/assets/files/free-css-templates/preview/page196/conquer/).
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+
 
 ## Overview
-This project provides you with great practice making MODERN LOOKING web apps 
-by cloning the "Conquer" Website Template in HTML/CSS/JS WITHOUT Bootstrap, 
-jQuery, or other libraries (like Materialize)!
 
-When you download it to check out, the design is made using Bootstrap and 
-jQuery, but we want you to make it without those libraries, just using your 
-mad HTML, CSS, and JavaScript skillz!
+### The challenge
 
-When you are done, this type of template looks terrific and gracefully 
-responds on all devices. You could make different versions to use in future 
-web apps you develop!
+Users should be able to:
 
-## About Chingu
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-If you aren’t yet a member of Chingu we invite you to join us. We help our 
-members transform what they’ve learned in courses & tutorials into the 
-practical experience employers need and want.
+### Screenshot
+#### Desktop
 
-Our remote team projects let you refine your technical skills and put them 
-into practice while gaining new “soft” skills like communication, 
-collaboration, and Agile project management. The types of skills that 
-help real-world teams get things done!
+<img src="assets/thumbs/desktop.png" style="width: 500px;">
 
-You can learn more and join us at [chingu.io](https://chingu.io).
+#### Mobile
 
-## Instructions
+<img src="assets/thumbs/mobile.png" style="width: 300px;">
 
-For this project you must use Native (Vanilla/Plain) HTML5, CSS, and 
-JavaScript. You are encouraged to use CSS-Grid, Flexbox, Media Queries, a
-naming system like BEM, semantic HTML tags, or other modern techniques! 
+### Links
 
-> You may **NOT** use frameworks or libraries such as Bootstrap.
+- Live Site URL: [Advice Generator App](https://conquer-tier-1-soloproject.vercel.app/)
 
-General instructions for all Pre-Work Projects can also be found in the [Chingu
-Library](https://voyage.docs.chingu.io/prework/howwork).
+## My process
 
-### Requirements
+### Built with
 
-*Structure*
-- [ ] Explore the [Conquer Template demo](https://www.free-css.com/free-css-templates/page196/conquer), then download it (FREE) to your computer
-- [ ] Make files for your app, such as an `index.html`, stylesheet, and `.js` file.
+- Semantic HTML5 markup
+- Flexbox
+- Javascript Promises
 
-      You may download the Conquer template and use its `index.html` for testing. 
-      This will allow you to compare what you've implemented against the 
-      screenshot we've provided. However, you'll need to come up with your 
-      own implementation of the CSS and JS.
 
-- [ ] Make sure you have HTML containers for each section. For instance a 
-navigation, header, footer, sections, divs
-- [ ] Footer section with your developer information
+## Author
 
-*Style*
-- [ ] Cloning means to create a web page with a layout as identical as possible
-to the template. 
-
-      Fonts, colors, and images are not important. The layout of the web page
-      on the other hand should be the same. A suggestion would be to compare
-      the way the template looks face to face to the clone.
-
-- [ ] Choose some images for your template sections at [Unsplash](https://unsplash.com/) 
-or another free image/video site
-- [ ] Which fonts and colors do you want to use? Add these and media queries 
-(to look good on mobile) to your stylesheet, which you need to add to your 
-`index.html`
-- [ ] For the card sections of the page, categories, etc. decide on a layout 
-strategy and use it consistently, such as CSS Grid and/or Flexbox
-- [ ] Design your buttons and other elements. Remember to use a consistent
-design so buttons all look like buttons, links all look like links, etc.
-
-*Functionality*
-- [ ] Make your buttons scroll to the page sections. The scrolling that 
-gracefully eases in instead of jumps is a good thing to try with JavaScript
-- [ ] Implement a Parallax effect for your page.
-
-      You are going to need to research how to write the JavaScript and CSS for 
-      the PARALLAX effect. It is recommended, because it is an effect in high 
-      demand! "Parallax" scrolling is when the background appears to move at 
-      a different rate of speed, or in a different direction, than the rest 
-      of the page.
-
-*Other*
-- [ ] Your repo needs to have a robust `README.md`
-- [ ] Make sure that there are no errors in the developer console before submitting
-
-**Extras (Not Required)**
-
-- [ ] Make your design fully responsive *(small/large/portrait/landscape, etc.)*
-- [ ] Anticipate and handle any edge cases
-- [ ] Use Accessibility techniques (i.e. a11ly) to improve your site for users 
-with impairments 
-- [ ] Add a `CONTRIBUTING.md` file with instructions on how to contribute to
-your project
-- [ ] Each category could have a different background! You could use different 
-free images from [Unsplash](https://unsplash.com) for this.
-- [ ] Implement service workers to improve performance by relying on cached data
+- Website - [Roni Egbu](https://ronniiii-i.github.io)
+- Twitter - [@ronniiii_i](https://www.twitter.com/ronniiii_i)
 
