@@ -78,7 +78,7 @@ input:focus, input:active, input:visited, textarea:focus, textarea:active, texta
 }
 .row{
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
 }
 .column{
     flex-direction: column;
@@ -109,10 +109,9 @@ nav{
     text-align: center;
     background-color: rgb(48, 47, 47);
     position: fixed;
-    margin-bottom: 5.6rem;
+    /* margin-bottom: 5.6rem; */
     top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
 }
 nav ul li{
     display: inline-block;
@@ -129,6 +128,37 @@ nav ul li a{
 }
 nav ul li a:hover{
     background-color: #646464;
+}
+.burger{
+    width: 25px;
+    height: 17px;
+    z-index: 6;
+    /* display: none; */
+    cursor: pointer;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: rgb(48, 47, 47);
+    padding: 3px;
+    border-radius: 3px;
+}
+/* .fixed{
+} */
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.rot1{
+    transform: rotate(405deg) translate(4px,5px);
+}
+.disappear{
+    opacity: 0;
+}
+.rot2{
+    transform: rotate(-405deg) translate(4px,-5px);
 }
 section{
     padding: 5rem 7rem;
@@ -255,7 +285,6 @@ main a:hover{
     background: url(img/08.png) fixed center no-repeat;
     text-align: center;
     color: white;
-    padding: 5rem 7rem;
 }
 #contact h2{
     text-shadow: 2px 2px #333333;
@@ -305,4 +334,138 @@ main a:hover{
 }
 *::placeholder{
     color: #333333;
+}
+.top-arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #262628;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+.top-arrow a{
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+}
+@media screen and (max-width: 1023px) {
+    #home h1{
+        max-width: 75%;
+    }
+    #home p{
+        max-width: 70%;
+    }
+    .card{
+        margin-block: 3rem;
+    }
+    .desc, .more{
+        justify-content: space-evenly;
+    } 
+    .by2{
+        width: 60%;
+    }
+    .by3{
+        width: 40%;
+    }
+    .by4{
+        width: 34%;
+    }
+    form.flex{
+        justify-content: center;
+    }
+    form .flex{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .desc, .more{
+        justify-content: space-around;
+    } 
+    .by2{
+        width: 70%;
+    }
+    .by3{
+        width: 45%;
+    }
+    .by4{
+        width: 40%;
+    }
+    #contact h2,
+    #contact p,
+    #contact form{
+        max-width: 80%;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+        padding-top: 0;
+    }
+    nav{
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+    nav ul{
+        top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 30px auto;
+        width: 90%;
+        background-color: rgb(48, 47, 47);
+        display: none;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul.show{
+        display: block;
+    }
+    section{
+        padding: 1rem 3rem;
+    }
+    #home h1{
+        max-width: 100%;
+    }
+    #home p{
+        max-width: 90%;
+    }
+    .desc, .more{
+        justify-content: space-around;
+    } 
+    .card{
+        min-height: fit-content !important;
+        margin-block: 1rem;
+    }
+    .card .image {
+        height: 170px !important;
+    }
+    .by2{
+        width: 100%;
+    }
+    .by3{
+        width: 100%;
+    }
+    .by4{
+        width: 100%;
+    }
+    #about .desc, #about .more{
+        padding-block: 1rem;
+    }
+    #services .desc,
+    #services .col{
+        padding: 2rem 3rem;
+    }
+    #contact h2,
+    #contact p,
+    #contact form{
+        max-width: 100%;
+        margin: 2rem auto;
+    }
 }
