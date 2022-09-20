@@ -133,17 +133,16 @@ nav ul li a:hover{
     width: 25px;
     height: 17px;
     z-index: 6;
-    /* display: none; */
+    display: none;
     cursor: pointer;
     position: fixed;
     top: 1.5rem;
     right: 1.5rem;
     background-color: rgb(48, 47, 47);
     padding: 3px;
+    transition: all .5s;
     border-radius: 3px;
 }
-/* .fixed{
-} */
 .line{
     width: 100%;
     height: 1px;
@@ -152,13 +151,13 @@ nav ul li a:hover{
     transition: all .5s;
 }
 .rot1{
-    transform: rotate(405deg) translate(4px,5px);
+    transform: rotate(407deg) translate(5px,5px);
 }
 .disappear{
     opacity: 0;
 }
 .rot2{
-    transform: rotate(-405deg) translate(4px,-5px);
+    transform: rotate(-405deg) translate(6px,-6px);
 }
 section{
     padding: 5rem 7rem;
@@ -407,17 +406,32 @@ main a:hover{
         padding: 0;
         margin-bottom: 0;
         background-color: transparent;
+        transition: 3s all;
+    }
+    .burger{
+        display: flex;
+    }
+    .burger.h{
+    border: 1px solid white;
+    height: 25px;
+    }
+    .burger.h .line{
+        height: 2px;
     }
     nav ul{
-        top: 30px;
+        top: -300px;
+        left: 1%;
+        right: 1%;
+        position: absolute;
         margin-bottom: 0;
         padding: 0;
         border-radius: 10px;
         overflow: hidden;
-        margin: 30px auto;
+        margin: 15px auto;
         width: 90%;
         background-color: rgb(48, 47, 47);
-        display: none;
+        height: 0px;
+        transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     nav ul li{
         display: block;
@@ -425,7 +439,11 @@ main a:hover{
         margin: 0;
     }
     nav ul.show{
-        display: block;
+        /* display: block; */
+        height: fit-content;
+        top: 0px;
+        transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 1;
     }
     section{
         padding: 1rem 3rem;
